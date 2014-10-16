@@ -1,0 +1,16 @@
+<div class="containter">
+
+<!-- VIEW for editing a draft -->
+<div ng-app="blog" ng-controller="createBlogCtrl" class="container app">
+		<!-- text-angular div -->
+		<div text-angular="text-angular" name="blogcontent" ng-model="blogcontent"></div>
+		<button ng-click="ctrlPostData()">Post Blog</button>
+		<button ng-click="updatePost()"> Update </button>
+		<!-- repeat for every blog post -->
+		<div ng-repeat="crap in blogPosts" >
+			<div ng-bind-html="crap.content">{{crap.content}}</div>
+			<button ng-click="delPost()"> Delete Post </button>
+			<button ng-click='editPost()'> Edit Post </button>
+		</div>
+
+	</div>
