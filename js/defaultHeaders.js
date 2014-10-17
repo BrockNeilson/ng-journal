@@ -1,4 +1,4 @@
-var app = angular.module('blog');
+var app = angular.module('journalApp');
 
 app.factory('httpRequestInterceptor', function () {
   return {
